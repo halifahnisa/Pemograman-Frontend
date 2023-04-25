@@ -1,0 +1,78 @@
+/* Small Screen */
+.container {
+    margin: 1rem;
+  }
+  
+  .covid {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .covid__left {
+    margin-bottom: 1rem;
+  }
+  
+  .covid__title {
+    color: #5F9EA0;
+    margin-bottom: 1rem;
+    font-size: 2.44rem;
+  }
+  
+  .covid__genre {
+    color: #8FBC8F;
+    margin-bottom: 1rem;
+    font-size: 1.59rem;
+  }
+  
+  .covid__description {
+    color: #64748b;
+    margin-bottom: 1rem;
+  }
+  
+  .covid__button {
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #008080;
+    color: #fff;
+  }
+  
+  .covid__image {
+    max-width: 50%;
+    height: auto;
+    border-radius: 25px;
+    padding-left: 30%;
+  }
+  
+  /* Medium Screen */
+  @media (min-width: 768px) {
+    /*
+     * Nothing TODO Here.
+     * We dont change style covid. 
+     */
+  }
+  
+  /* Large Screen */
+  @media (min-width: 992px) {
+    .container {
+      max-width: 1200px;
+      margin: 3rem auto;
+    }
+  
+    .covid {
+      margin: 0 1rem;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      text-align: left;
+    }
+  
+    .covid__left {
+      flex-basis: 40%;
+    }
+  
+    .covid__right {
+      flex-basis: 60%;
+    }
+  }

@@ -1,0 +1,42 @@
+.container {
+    margin: 1rem;
+  }
+  
+  .indo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .judul {
+    color: #5F9EA0;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+  
+  .deskripsi {
+    color: #6096ba;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+  .status{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 100px;
+    align-items: center;
+    grid-row: 30px;
+    color: #6096ba;
+  }
+
+  .status > .isi{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 30px;
+    text-align: center;
+    background: white;
+    width: 300px;
+  }
+  .isi{
+    padding: 2px 16px;
+  }
+
+
