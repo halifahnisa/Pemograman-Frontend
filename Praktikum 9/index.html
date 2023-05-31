@@ -1,0 +1,70 @@
+<body>
+    <div id="root"></div>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+        // Membuat  codingan javascript
+        function Hello(props){
+            const {nama, jurusan} = props;
+
+            return (
+            <div>
+                <h2>Hai saya {props.nama}</h2>
+                <p> Saya jurusan  {props.jurusan}</p>
+            </div>
+            );
+        }
+
+        function Header (){
+            return(
+                <nav>
+                    <ul>
+                        <li>Home</li>
+                        <li>Abaout</li>
+                        <li>Contact</li>
+                    </ul>
+                </nav>
+            );
+        }
+
+        function Main(){
+            return (
+                <main>
+                    <Hello nama="Ridwan" jurusan="Sastra"/>
+                    <Hello nama="Peol" jurusan="Informatika"/>
+                    <Hello nama="Dani" jurusan="Ilmu Komunikasi"/>
+                </main>
+            );
+        }
+
+        function Footer(){
+            return (
+                <footer>
+                    <h2>Terimakasi buat kalian yang sudah mencoba belajar React</h2>
+                </footer>
+            );
+        }
+
+        function App (){
+            return(
+                <div>
+                    <Header />
+                    <Main />
+                    <Footer />
+                </div>
+            );
+        }
+
+        //ambil root elemen
+        const rootElement = document.getElementById("root");
+
+        //buat  root
+        const root = ReactDOM.createRoot(rootElement);
+
+        //root render
+        root.render(<App/>);
+    </script>
+</body>
