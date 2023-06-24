@@ -1,0 +1,39 @@
+//import logo from './logo.svg';
+/**import './App.css';
+import Hello from './components/Hello';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Main from './components/Main';
+**/
+import { Routes, Route } from "react-router-dom";
+import Home from "./Pages/Home";
+import CreateMovie from "./Pages/movie/CreateMovie";
+import PopularMovie from "./Pages/movie/PopularMovie";
+import NowPlaying from "./Pages/movie/NowPlaying";
+import TopRated from "./Pages/movie/TopRated";
+import Layout from "./Layout";
+import { ThemeProvider } from "styled-components";
+import theme from "./components/utils/constants/theme";
+import Detail from "./Pages/movie/Detail";
+
+function App() {
+  return (
+    <>
+    <ThemeProvider theme={theme}>
+      <GlobalStyle />
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Home movies ={movies}/>}></Route>
+          <Route path="/movie/create" element={<CreateMovie movies={movies} setMovies={setMovies}/>}></Route>
+          <Route path="/movie/popular" element={<PopularMovie/>}></Route>
+          <Route path="/movie/now-playing" element={<NowPlaying/>}></Route>
+          <Route path="/movie/top-rated" element={<TopRated/>}></Route>
+          <Route path="/movie/:id" element={<Detail/>}></Route>
+        </Routes> 
+      </Layout>
+    </ThemeProvider>    
+    </>
+  );
+}
+
+export default App;
