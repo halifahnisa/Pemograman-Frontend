@@ -1,0 +1,39 @@
+.container {
+  margin: 1rem;
+}
+
+.region {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.judul {
+  color: #5F9EA0;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.deskripsi {
+  color: #6096ba;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+.regions {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.isi{
+  width: 200px;
+  height: 220px;
+  background: linear-gradient(grey, #6096ba);
+  color: white;
+  text-align: center;
+  border-radius: 25px;
+  margin: 10px;
+}

@@ -1,0 +1,41 @@
+.container {
+  margin: 1rem;
+}
+.prov {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+table {
+  width: 800px;
+  height: 200px;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  
+  th {
+  border-bottom: 1px solid black;
+  border: 2px solid black;
+  color: #5F9EA0;
+
+  }
+  
+  td {
+  text-align: center;
+  border: 2px solid black;
+  }
+
+.judul {
+  color: #5F9EA0;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.deskripsi {
+  color: #6096ba;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+
